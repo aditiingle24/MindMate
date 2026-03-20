@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import Sidebar from "../components/Sidebar";
 
-const API_URL = "http://localhost:5000/api/affirmations";
+const API_URL = `${import.meta.env.VITE_API_URL || "http://localhost:5000/api"}/affirmations`;
 const MAX     = 3;
 const token   = () => localStorage.getItem("token");
 
