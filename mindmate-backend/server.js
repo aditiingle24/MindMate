@@ -11,7 +11,7 @@ const app = express();
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://mindmate.vercel.app"
+    "https://mind-mate-steel.vercel.app"
   ],
   credentials: true
 }));
